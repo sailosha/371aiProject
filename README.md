@@ -4,7 +4,8 @@
 
 
 Movement Rule
-   - [x]Baisc rule
-   - [ ]En passant 
-   - [ ]Promotion
-   - [ ]Castling
+
+- [x] Baisc rule
+- [ ] En passant 
+- [ ] Promotion
+- [ ] Castling
