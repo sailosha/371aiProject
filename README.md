@@ -22,9 +22,20 @@ GUI?
 - [ ] NEED a good OOP implement style
 
 Output
--[ ] output in console
--[ ] dump all the output in text file (example shown)
+- [ ] output in console
+- [ ] dump all the output in text file (example shown)
 ```
 		PrintStream out = new PrintStream(new FileOutputStream("d:/output.txt"));
 		System.setOut(out);
    ```
+
+Psysical handin
+- [ ] print out code
+- [ ] 6-8 pages typed report
+- [ ] Describe program 
+- [ ] Including any reference
+
+E-submit
+- [ ] processable coding 
+- [ ] reference
+      
