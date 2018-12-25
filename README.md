@@ -1,6 +1,6 @@
 # 371aiProject
 
-## Project by Slayer Mao and Saikorin
+## Project by Sylar Mao and Saikorin
 
 
 Movement Rule
