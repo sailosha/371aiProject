@@ -42,3 +42,8 @@ E-submit
       
 Algo reference
 https://ask.helplib.com/resources/post_485255
+
+## AB Pruning
+[Alpha-beta pruning](http://www.frayn.net/beowulf/theory.html#abpruning) is a technique for enormously reducing the size of your game tree. Currently using the negamax algorithm we are searching every reply to every move in the tree. In the average chess position there are about 30 legal moves, and let's say for sake of argument that our program analyses 50,000 moves per second. Now, let's see how deep we can search.
+
+
