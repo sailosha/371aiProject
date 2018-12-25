@@ -29,7 +29,7 @@ Output
 		System.setOut(out);
    ```
 
-Psysical handin
+Physical handin
 - [ ] print out code
 - [ ] 6-8 pages typed report
 - [ ] Describe program 
