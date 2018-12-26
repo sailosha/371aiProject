@@ -20,6 +20,12 @@ AI build up
 GUI?
 - [ ] build up a gui board to receive more grade? (need to be api style to implement either way)
 - [ ] NEED a good OOP implement style
+- [ ] Core panel build up
+- [ ] Cheese img and listern event up
+- [ ] implement cheese rules
+- [ ] implement ab-p
+- [ ] output result, win/lose/illegal/slatmate and etc...
+
 
 Output
 - [ ] output in console
