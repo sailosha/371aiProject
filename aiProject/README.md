@@ -11,3 +11,13 @@ try to implement minimax ab purning tree
 
 remember OOP!!! implement GUI at least
 Using ASCII output first
+
+implement special rules
+
+ABP(depth) for search best fitness function result
+
+let computer spend about 1-15s to next step..
+
+If impelemt GUI
+FX? SWT? 
+separte class!!! and prepare for the document without GUI implement 
