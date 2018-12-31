@@ -32,27 +32,30 @@ public class Main
         {
             System.out.println("Black Move!");
             moveString=kb.nextLine();
-            while(!moveString.contains("QUITE"))
+            while(!moveString.contains("QUITE")&&!gameBoard.winCheck())
             {
-                while (!validator.check(gameBoard, moveString, true))
+                while (!validator.UserCheck(gameBoard, moveString, true))
                 {
                     System.out.println("Invalid enter\nPlease enter again");
                     printer.print(gameBoard);
                     moveString = kb.nextLine();
                 }
                 printer.print(gameBoard);
+                gameBoard.clearEnPassant(false);
                 //ai HERE
 
-                while (!validator.check(gameBoard, moveString,false))
+                while (!validator.UserCheck(gameBoard, moveString,false))
                 {
                     System.out.println("1Invalid enter\nPlease enter again");
                     printer.print(gameBoard);
                     moveString = kb.nextLine();
                 }
                 printer.print(gameBoard);
+                gameBoard.clearEnPassant(true);
             }
         }
-        else {
+        else
+            {
             System.out.println("Black Move!");
             //AI HERE
             /*
@@ -60,23 +63,29 @@ public class Main
 
             System.out.println("White Move!");
             moveString = kb.nextLine();
-            while (!moveString.contains("QUITE")) {
-                while (!validator.check(gameBoard, moveString, playerIsBlack)) {
+            while (!moveString.contains("QUITE")&&!gameBoard.winCheck())
+            {
+                while (!validator.UserCheck(gameBoard, moveString, playerIsBlack))
+                {
                     System.out.println("Invalid enter\nPlease enter again");
                     printer.print(gameBoard);
                     moveString = kb.nextLine();
                 }
                 printer.print(gameBoard);
+                gameBoard.clearEnPassant(true);
                 /*
                 AI here
                  */
-                while (!validator.check(gameBoard, moveString, !playerIsBlack)) {
+                while (!validator.UserCheck(gameBoard, moveString, !playerIsBlack))
+                {
                     System.out.println("Invalid enter\nPlease enter again");
                     printer.print(gameBoard);
                     moveString = kb.nextLine();
                 }
                 printer.print(gameBoard);
+                gameBoard.clearEnPassant(false);
             }
         }
     }
 }
+

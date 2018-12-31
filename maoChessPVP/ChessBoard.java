@@ -1,5 +1,4 @@
 package maoChessPVP;
-
 import javax.xml.validation.Validator;
 
 /**
@@ -33,7 +32,7 @@ public class ChessBoard
                 checkLocation(next).index=new Location(-1,-1);
                 checkLocation(next).isAlive=false;
                 checkLocation(old).index=next;
-                checkLocation(next).idMoved=true;
+                checkLocation(next).isMoved=true;
                 break;
             case 2:
                 break;
@@ -42,10 +41,42 @@ public class ChessBoard
                 checkLocation(temp).index=new Location(-1,-1);
                 checkLocation(temp).isAlive=false;
                 checkLocation(old).index=next;
-                checkLocation(next).idMoved=true;
+                checkLocation(next).isMoved=true;
                 break;
                 default:
-
         }
 	}
+
+	public boolean winCheck()
+    {
+        if(ChessList[4].isAlive==false&&ChessList[19].isAlive==true)
+        {
+            System.out.println("White WIN!!");
+            return true;
+        }
+        if(ChessList[4].isAlive==true&&ChessList[19].isAlive==false)
+        {
+            System.out.println("Black WIN!!");
+            return true;
+        }
+        return false;
+    }
+
+    public void clearEnPassant(boolean claerBlack)
+    {
+        if(claerBlack)
+        {
+            for(int i=8;i<16;i++)
+            {
+                ChessList[i].enPassant=false;
+            }
+        }
+        else
+        {
+            for(int i=24;i<32;i++)
+            {
+                ChessList[i].enPassant=false;
+            }
+        }
+    }
 }

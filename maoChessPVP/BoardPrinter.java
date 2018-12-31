@@ -1,5 +1,4 @@
 package maoChessPVP;
-
 /**
  * @author Yiwei Mao
  * Last modify on 2018/12/14 ${time}

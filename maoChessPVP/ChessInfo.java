@@ -1,5 +1,4 @@
 package maoChessPVP;
-
 /**
  * @author Yiwei Mao
  * Last modify on 2018/12/14 ${time}
@@ -9,7 +8,7 @@ public class ChessInfo
 	Location index;
 	int value;
 	boolean isAlive;
-	boolean idMoved;
+	boolean isMoved;
 	boolean blackSide;
 	boolean enPassant;
 	boolean blackAttacking;
@@ -21,7 +20,7 @@ public class ChessInfo
 		index = new Location(x,y);
 		value = cost;
 		isAlive = life;
-		idMoved = moved;
+		isMoved = moved;
 		blackSide = isBlack;
 		type = name;
 		enPassant = false;
